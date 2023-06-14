@@ -21,7 +21,7 @@ export const Feed = ({ user }: TypeProps) => {
         const scroll = window.scrollY;
         const height = document.body.offsetHeight - window.innerHeight;
 
-        if (scroll > height * 0.85 && !wait) {
+        if (scroll > height * 0.5 && !wait) {
           setPages(pages => [...pages, pages.length + 1]);
           wait = true;
 
