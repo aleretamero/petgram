@@ -1,4 +1,4 @@
-export const API_URL = 'https://dogsapi.origamid.dev/json';
+export const API_URL = import.meta.env.VITE_API_URL;
 
 type TypeUser = {
   username: string;
